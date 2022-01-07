@@ -1,0 +1,51 @@
+﻿@model Receitas_XPTO.Models.Utilizador
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Utilizador</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.HiddenFor(model => model.Password)
+            *******
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pin)
+        </dt>
+
+        <dd>
+            @Html.HiddenFor(model => model.Pin)
+            *******
+        </dd>
+        <dt>
+            Receitas adicionadas
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Receitas.Count)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @*@Html.ActionLink("Editar", "Edit", new { id = Model.UtilizadorID }) |*@
+    @Html.ActionLink("Voltar", "Index")
+</p>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Receitas_XPTO.Models.GrauDificuldade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Graus de dificuldade</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Grau de Dificuldade
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dificuldade)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.DificuldadeID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.DificuldadeID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.DificuldadeID })
+        </td>
+    </tr>
+}
+
+</table>
+<p>
+    @Html.ActionLink("Criar novo", "Create")
+</p>

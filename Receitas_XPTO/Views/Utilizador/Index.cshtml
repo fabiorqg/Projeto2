@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Receitas_XPTO.Models.Utilizador>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Utilizadores</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Username
+        </th>
+        <th>
+            Opções
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Detalhes", "Details", new { id = item.UtilizadorID })
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.UtilizadorID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.UtilizadorID }) |
+        @Html.ActionLink("Eliminar", "Delete", new { id=item.UtilizadorID })*@
+        </td>
+    </tr>
+}
+
+</table>
+
+<p>
+    @Html.ActionLink("Ciar novo", "Create")
+</p>

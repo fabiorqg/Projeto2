@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Contact";
+
+    <link href="~/Content/MyCSS.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/MyScript.js"></script>
+}
+@*<h2>@ViewBag.Title.</h2>
+    <h2>@ViewBag.Message</h2>*@
+
+
+<!--Formulário de contato-->
+<h2>Formulário de contacto</h2>
+
+<section class="section pb-5" onload="LoadForm">
+
+    <!--Section description-->
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-5 mb-4">
+
+            <!--Form with header-->
+            <div class="card">
+                <!-- Default form contact -->
+                <br />
+                <form class="text-center border border-light p-5" action="#!">
+
+
+                    <!-- Name -->
+                    <p class="text-left">Nome<span class="Required">*</span></p>
+                    <input id="inputNome"
+                           class="form-controlo"
+                           type="text"
+                           maxlength="100"
+                           size="50"
+                           onblur="ValidateNome();"
+                           placeholder="Nome">
+                    <br />
+
+                    <!-- Email -->
+                    <p class="text-left">Email<span class="Required">*</span></p>
+                    <input id="inputEmail"
+                           class="form-controlo"
+                           type="email"
+                           maxlength="100"
+                           size="50"
+                           onblur="ValidateEmail();"
+                           placeholder="E-mail" />
+
+                    <br />
+                    <p class="text-left font-weight-bold">Assunto</p>
+                    <select id="inputSubjet" class="form-controlo" placeholder="Assunto">
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="outros">Outros Assuntos</option>
+                    </select>
+
+                    <br />
+                    <!-- Message -->
+                    <p class="text-left font-weight-bold">Mensagem</p>
+                    <textarea id="inputMessage"
+                              class="form-controlo"
+                              onblur="ValidateNome();">
+                          </textarea>
+                    <br />
+
+
+
+                    <div class="image-left">
+                        <input id="buttonValidate" class="btn btn-blue" type="button" value="Enviar" onclick=Enviar()>
+                        <input id="buttonReset" class="btn btn-blue" type="reset" value="Limpar dados" onclick="Limpar()">
+                    </div>
+                </form>
+            </div>
+            <!--Form with header-->
+
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-7">
+
+            <!--Google map-->
+            <div id="map-container-google-11" class="map-container-6" style="height: 400px">
+                <iframe src="http://maps.google.com/maps?q=41.122705,-8.609311&z=15&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <!--Buttons-->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    @* Esta classe posiciona o texto usando o sistema de grids*@
+                    
+                    <p>Vila Nova de Gaia</p>
+                    <p>Porto</p>
+                </div>
+
+                <div class="col-md-4">
+                    <p>+351 916 704 767</p>
+                    <p>fabiorqg@gmail.com</p>
+                </div>
+
+                <div class="col-md-4">
+                    <p>https://www.linkedin.com/in/fabiorqg/</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,68 @@
+﻿@model Receitas_XPTO.Models.Receita
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes da receita.</h2>
+
+<div>
+    @*<h4>Tem sugestões de alteração? Envie-nos um email</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Nome da receita:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceitaNome)
+        </dd>
+
+        <dt>
+            Categoria:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.CategoriaNome)
+        </dd>
+
+        <dt>
+            Dificuldade:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dificuldade.Dificuldade)
+        </dd>
+
+        <dt>
+            Duração:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracao)
+        </dd>
+
+        <dt>
+            Descrição:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            Utilizador que submeteu:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utilizador.Username)
+        </dd>
+
+    </dl>
+</div>
+<div class="container-fluid"> <div class="row"> <h4 class="one">Detetou algum erro ou tem alguma sugestões de alteração? 
+    <br/>Envie-nos um email.</h4> <button class="btn btn-info">Contactar</button> </div> </div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.ReceitaID }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

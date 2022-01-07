@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Receitas_XPTO.Models.Receita>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Receitas para aproveitar</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Nome da receita
+        </th>
+        <th>
+            Categoria
+        </th>
+        <th>
+            Dificuldade
+        </th>
+        <th>
+            Duração
+        </th>
+        <th>
+            Descrição
+        </th>
+        <th>
+            Inserida por
+        </th>
+        <th>
+            Opções
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReceitaNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Categoria.CategoriaNome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dificuldade.Dificuldade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duracao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Utilizador.Username)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.ReceitaID }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.ReceitaID }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.ReceitaID })
+        </td>
+    </tr>
+}
+
+</table>
+
+<p>
+    @Html.ActionLink("Inserir nova receita", "Create")
+</p>

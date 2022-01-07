@@ -1,0 +1,125 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container-fluid row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Content/imagens/Banner1.png" alt="Imagem comida saudável" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="~/Content/imagens/Banner2.png" alt="Imagem de bifes grelhados" style="width:100%;">
+            </div>
+
+            <div class="item">
+                <img src="~/Content/imagens/Banner3.png" alt="Imagem de bolos e outras sobremesas" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="~/Content/imagens/Banner4.png" alt="Imagem de bolos e outras sobremesas" style="width:100%;">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Seguinte</span>
+        </a>
+    </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Projeto P3</h2>
+        <p>
+            Este projeto foi desenvolvido no âmbito do programa de capacitação Power Code (2ª edição).
+        </p>
+        <p>
+            Teve como ojbectivo a implementação de uma componente web com base de dados, utilizando MVC 5 com Entity Framework 6 e Bootsrap.
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h2>Conhecimentos aplicados</h2>
+        <ul class="">
+            <li>SQL Server para configurar a base de dados.</li>
+            <li>Criação das POCOS Classes com as devidas anotações e implementação de operações CRUD</li>
+            <li>Criação de um SEED inicial de dados</li>
+            <li>Aplicação da técnica manual migrations</li>
+            <li>Criação de controladores e respetivas vistas</li>
+            <li>Customização de todas as páginas</li>
+            <li>Alteração dos campos para nomes amigáveis</li>
+            <li>Utilização do Bootstrap</li>
+            <li>Customização de estilos usando CSS</li>
+        </ul>
+
+    </div>
+
+    <div class="col-md-4 img-responsive">
+        <h2>Folha de estilos individual</h2>
+        <img src="~/Content/imagens/CodeCSS.png" alt="Imagem de CSSs" style="width:100%;">
+
+        <p></p>
+    </div>
+
+
+
+</div>
+
+<!--Side by side -->
+<section>
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-md-7 col-md-push-5">
+            <h2>Como cortar kiwis da melhor forma? <span class="texto-destaque-verde">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p><a class="btn btn-info" href="https://www.pingodoce.pt/receitas/tecnicas/como-cortar-kiwis-da-melhor-forma/" target="_blank">Saber mais &raquo;</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <img src="~/Content/imagens/Destaque1.png" alt="imagem de kiwis cortados">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Explosão de cor e vitaminas. <span class="texto-destaque-vermelho">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p><a class="btn btn-info" href="https://www.nit.pt/fit/alimentacao-saudavel/alimentos-reforcam-sistema-imunitario" target="_blank">Saber mais &raquo;</a></p>
+        </div>
+
+        <div class="image-right">
+            <img src="~/Content/imagens/Destaque2.png" alt="Imagem de fruta e legumes de cor vermelha">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+        <div class="col-md-7 col-md-push-5">
+            <h2>Costa Portuguesa, peixe fresco e saboroso! <span class="texto-destaque-azul">The best, at your table!</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p><a class="btn btn-info" href="https://www.cienciaviva.pt/peixes/home/index.asp" target="_blank">Saber mais &raquo;</a></p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+            <img src="~/Content/imagens/Destaque4.png" alt="imagem peixes no mar">
+        </div>
+    </div>
+</section>

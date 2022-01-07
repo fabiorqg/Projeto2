@@ -1,0 +1,94 @@
+﻿
+.map-container-6 {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-container-6 iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+.Required {
+    color: red;
+}
+.map-style {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    
+}
+
+.texto-destaque-verde {
+    color: #93e058;
+}
+.texto-destaque-vermelho {
+    color: #ea3b35;
+}
+.texto-destaque-azul {
+    color: #0f62f7
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-blue {                     /*Dá cor ao botão azul com letras brancas*/
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-blue:hover {
+    color: #000000;
+    background-color: #8dbb36;
+}
+.btn-red {                       /*Dá cor ao botão vermelho com letras brancas*/
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.btn-orange {                   /*Dá cor ao botão laranja com letras brancas*/
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.image-right {
+    float: right;
+}
+.image-left {
+    float: left;
+}
+.form-controlo {
+    display: block;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+.navbar-brand {
+    color: blueviolet;
+}
