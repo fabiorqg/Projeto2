@@ -25,7 +25,7 @@
             <div class="card">
                 <!-- Default form contact -->
                 <br />
-                <form class="text-center border border-light p-5" action="#!">
+                <form class="text-center border border-light p-5" action="#!" name="form1">
 
 
                     <!-- Name -->
@@ -36,7 +36,7 @@
                            maxlength="100"
                            size="50"
                            onblur="ValidateNome();"
-                           placeholder="Nome">
+                           >
                     <br />
 
                     <!-- Email -->
@@ -47,7 +47,7 @@
                            maxlength="100"
                            size="50"
                            onblur="ValidateEmail();"
-                           placeholder="E-mail" />
+                           >
 
                     <br />
                     <p class="text-left font-weight-bold">Assunto</p>
@@ -55,6 +55,7 @@
                         <option value="reclamacao">Reclamação</option>
                         <option value="sugestao">Sugestão</option>
                         <option value="outros">Outros Assuntos</option>
+
                     </select>
 
                     <br />
@@ -62,8 +63,7 @@
                     <p class="text-left font-weight-bold">Mensagem</p>
                     <textarea id="inputMessage"
                               class="form-controlo"
-                              onblur="ValidateNome();">
-                          </textarea>
+                              onblur="ValidateNome();">Deixe a sua mensagem</textarea>
                     <br />
 
 
@@ -78,6 +78,9 @@
 
         </div>
         <!--Grid column-->
+        <br />
+        <br />
+
         <!--Grid column-->
         <div class="col-lg-7">
 
@@ -92,7 +95,7 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     @* Esta classe posiciona o texto usando o sistema de grids*@
-                    
+
                     <p>Vila Nova de Gaia</p>
                     <p>Porto</p>
                 </div>

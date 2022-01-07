@@ -53,14 +53,32 @@ function ValidateMessage() {
 
 }
 
-function Enviar() {
-    if (inputNome == "" && ValidateEmail == "" && inputMessage == "") {
+function Enviar2() {
+
+    let x = document.getElementById("inputNome");
+    let y = document.getElementById("inputEmail");
+
+    if (x == "" && y == "") {
         alert("Formulário enviado. Obrigado");
     }
     else {
         alert("Erro. Confirme novamente os dados");
     }
     
+}
+
+function Enviar() {
+    let nome = document.forms["form1"]["inputNome"].value;
+    let email = document.forms["form1"]["inputEmail"].value;
+
+    if (nome != "" && email != "") {
+        alert("Dados enviados. Obrigado!");
+        return true;
+    }
+    else {
+        alert('Ocorreu um erro! Verifique novamente os dados.');
+        return true;
+    }
 }
 
 
